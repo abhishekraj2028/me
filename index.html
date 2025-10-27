@@ -2,175 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abhishek Anand — Introduction</title>
-  <style>
-    :root{
-      --bg: #0b1220;
-      --panel: #0f172a;
-      --ink: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #60a5fa;
-      --accent-2: #34d399;
-      --ring: rgba(96,165,250,.35);
-      --card: #111827;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 800px at 20% -10%, #111827 0%, var(--bg) 55%);
-      color:var(--ink);
-      line-height:1.6;
-    }
-    .container{max-width:1000px;margin:0 auto;padding:32px}
-    header{
-      display:grid;grid-template-columns:80px 1fr;gap:18px;align-items:center;margin-bottom:22px
-    }
-    .avatar{
-      width:80px;height:80px;border-radius:50%;
-      background:linear-gradient(135deg,var(--accent),var(--accent-2));
-      display:grid;place-items:center;color:#0b1220;font-weight:800;font-size:28px;
-      box-shadow:0 10px 30px rgba(0,0,0,.35);
-    }
-    .title h1{margin:0;font-size:28px;letter-spacing:.2px}
-    .title p{margin:4px 0 0;color:var(--muted)}
-
-    .grid{display:grid;gap:16px}
-    @media (min-width: 780px){ .grid{grid-template-columns:2.2fr 1.3fr} }
-
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00));
-      border:1px solid rgba(148,163,184,.18);
-      border-radius:16px; padding:20px; backdrop-filter: blur(6px);
-      box-shadow: 0 10px 30px rgba(2, 6, 23, .35), inset 0 0 0 1px rgba(255,255,255,.01);
-    }
-    .card h2{margin:0 0 10px;font-size:18px;color:#e2e8f0}
-    .pill{display:inline-flex;align-items:center;gap:8px;background:#0b1220;border:1px solid rgba(148,163,184,.2);border-radius:999px;padding:8px 12px;font-size:14px;color:#cbd5e1}
-    .pill .dot{width:8px;height:8px;border-radius:999px;background:var(--accent)}
-
-    .section{display:grid;gap:12px}
-    ul.list{margin:0;padding-left:18px}
-    ul.list li{margin:4px 0}
-
-    .callout{
-      border-left:3px solid var(--accent);
-      padding:12px 14px;margin:6px 0;border-radius:10px;background:rgba(96,165,250,.08);color:#dbeafe
-    }
-
-    .footer{margin-top:22px;color:var(--muted);font-size:14px;text-align:center}
-
-    a,button,[tabindex] { outline: none; }
-    a:focus-visible, button:focus-visible, [tabindex]:focus-visible{ box-shadow:0 0 0 3px var(--ring); border-radius:10px }
-
-    .tags{display:flex;flex-wrap:wrap;gap:8px}
-    .tag{border:1px solid rgba(148,163,184,.25);padding:6px 10px;border-radius:999px;font-size:12px;color:#cbd5e1;background:rgba(255,255,255,.02)}
-
-    .badges{display:flex;gap:8px;flex-wrap:wrap}
-    .badge{font-size:12px;color:#a5b4fc;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);padding:6px 10px;border-radius:999px}
-
-    .muted{color:var(--muted)}
-
-    .email-link {
-      color: var(--accent-2);
-      text-decoration: none;
-    }
-    .email-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Anand’s Introduction Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="avatar" aria-hidden="true">AA</div>
-      <div class="title">
-        <h1>Abhishek Anand</h1>
-        <p>Preferred name: <strong>Abhishek</strong> • Current role: <strong>Graduate Student (M.S. in Computer Science)</strong></p>
-        <p>Email: <a href="mailto:AbhishekRajAnandMa@lewisu.edu" class="email-link">AbhishekRajAnandMa@lewisu.edu</a></p>
-        <div class="badges" aria-label="skills">
-          <span class="badge">Python</span>
-          <span class="badge">Java</span>
-          <span class="badge">Web Technologies</span>
-          <span class="badge">Full-Stack (Python)</span>
-          <span class="badge">AI Tools & Frameworks</span>
-        </div>
-      </div>
+      <h1>Abhishek Anand’s Introduction Website</h1>
+      <img src="me-800-by-800.jpg" alt="Abhishek Anand" class="profile-pic">
+      <p>Email: <a href="mailto:AbhishekRajAnandMa@lewisu.edu" class="email-link">AbhishekRajAnandMa@lewisu.edu</a></p>
+      <p>Discord: Abhishekkuku</p>
     </header>
 
-    <div class="grid">
-      <section class="card section" aria-labelledby="about">
-        <span class="pill" id="about"><span class="dot"></span> Hello!</span>
-        <p>
-          Hello everyone, my name is Abhishek Anand, and I'm currently pursuing my Master's in Computer Science. I have experience working with Python, Java, and web technologies. My current focus is on full-stack Python development, and I’m also exploring AI tools and frameworks.
-        </p>
-        <div class="callout">
-          I have a strong interest in data analytics, machine learning, and building scalable software solutions.
-        </div>
+    <main>
+      <section id="introduction" class="card">
+        <h2>Introduction</h2>
+        <p>Hello everyone! My name is Abhishek Anand, and I’m currently pursuing my Master’s in Computer Science at Lewis University. 
+        I have a strong interest in software development, AI, and data-driven applications. My family has always encouraged my curiosity for technology and problem-solving, 
+        and I enjoy learning how different technologies work together to create efficient systems.</p>
       </section>
 
-      <aside class="card section" aria-labelledby="quickfacts">
-        <h2 id="quickfacts">Quick Facts</h2>
-        <ul class="list">
-          <li><strong>First & Last Name:</strong> Abhishek Anand</li>
-          <li><strong>Preferred Name:</strong> Abhishek</li>
-          <li><strong>Current/Recent Title:</strong> Graduate Student (M.S. in Computer Science)</li>
-          <li><strong>Focus Areas:</strong> Full-Stack Python • AI/ML • Data Analytics</li>
-        </ul>
-      </aside>
-
-      <section class="card section" aria-labelledby="responsibilities">
-        <h2 id="responsibilities">Current / Recent Responsibilities</h2>
-        <ul class="list">
-          <li>Design and develop full-stack applications using Python-centric frameworks.</li>
-          <li>Explore and integrate AI tools/frameworks into practical software features.</li>
-          <li>Analyze datasets to extract insights that inform system behavior and UX.</li>
-          <li>Emphasize scalable, maintainable architectures for production-readiness.</li>
-          <li>Collaborate on end-to-end delivery—from requirements to deployment.</li>
+      <section id="learning" class="card">
+        <h2>What I Hope to Learn in This Course</h2>
+        <ul>
+          <li>Gain a deeper understanding of software architecture and design patterns.</li>
+          <li>Learn to apply frameworks like MVC and microservices in real projects.</li>
+          <li>Enhance my ability to build scalable and maintainable software systems.</li>
         </ul>
       </section>
 
-      <section class="card section" aria-labelledby="hobbies">
-        <h2 id="hobbies">Hobbies & Special Interests</h2>
-        <p class="muted">Professional interests</p>
-        <div class="tags">
-          <span class="tag">Data Analytics</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Scalable Systems</span>
-          <span class="tag">Web Engineering</span>
-        </div>
-        <p class="muted">Personal hobbies</p>
-        <div class="tags">
-          <span class="tag">Photography</span>
-          <span class="tag">Traveling</span>
-          <span class="tag">Cooking</span>
-          <span class="tag">Playing Chess</span>
-        </div>
-      </section>
-
-      <section class="card section" aria-labelledby="degree">
-        <h2 id="degree">Why I'm Pursuing this Degree</h2>
-        <p>
-          I'm pursuing an M.S. in Computer Science to deepen my expertise in building data-driven, scalable software, strengthen my understanding of machine learning, and prepare for roles where I can architect solutions end-to-end.
+      <section id="hobby" class="card">
+        <h2>My Favorite Hobby / Activity</h2>
+        <ul>
+          <li>Photography</li>
+          <li>Playing Chess</li>
+        </ul>
+        <p>Learn more about photography at 
+          <a href="https://www.nationalgeographic.com/photography/" target="_blank">National Geographic Photography</a>.
         </p>
+        <img src="me-300-by-300.jpg" alt="Abhishek Anand thumbnail" class="thumbnail">
       </section>
 
-      <section class="card section" aria-labelledby="course">
-        <h2 id="course">Why I'm Taking This Course (Software Architecture & Design)</h2>
-        <p>
-          I chose Software Architecture and Design because it helps me understand how different parts of a software system work together efficiently. It teaches me how to design applications that are well-structured, scalable, and easy to maintain.
-        </p>
+      <section id="funfact" class="card">
+        <h2>Fun Fact</h2>
+        <p>I once built an AI bot that writes personalized poems based on a person’s mood — it even rhymes surprisingly well!</p>
       </section>
+    </main>
 
-      <section class="card section" aria-labelledby="funfact">
-        <h2 id="funfact">Fun Fact</h2>
-        <p>
-          I once built a small AI bot that could write personalized poems based on the user’s mood—it even rhymed surprisingly well! That project got me interested in natural language processing and creative AI applications.
-        </p>
-      </section>
-    </div>
-
-    <p class="footer">© <span id="year"></span> Abhishek Anand • Built with semantic HTML & modern CSS</p>
+    <footer>
+      <p>© <span id="year"></span> Abhishek Anand — Built with HTML & CSS</p>
+    </footer>
   </div>
 
   <script>
